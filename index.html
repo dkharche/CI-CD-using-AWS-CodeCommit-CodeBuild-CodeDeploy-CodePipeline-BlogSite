@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Content section styling */
+        .content {
+            height: 400px;
+            /* Adjust the height as needed */
+            padding: 16px;
+            margin-left: 10%;
+            margin-right: 7%;
+        }
+
+        p {
+
+            font-size: 25px;
+
+        }
+
+        h2 {
+            font-size: 30px;
+            background-color: darkgray
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#codebuild">CodeBuild</a>
+        <a href="#codedeploy">CodeDeploy</a>
+        <a href="#codepipeline">CodePipeline</a>
+        <a href="#other-components">Other-Components</a>
+        <!-- Add more links for other components as needed -->
+    </div>
+    <h1 style="margin-left: 24%; color: gold;">Aws Blog page on CodeBuild, CodeDeploy and CodePipeline</h1>
+    <!-- Content -->
+    <div class="content" id="home" style="color: aqua;">
+        <h2>Introduction</h2>
+        <p>In recent years, cloud computing has become increasingly popular due to its scalability,
+            flexibility, and
+            cost-effectiveness. Amazon Web Services (AWS) is one of the leading cloud service providers, offering a wide
+            range of services for various business needs. AWS CodeBuild, CodeDeploy, and CodePipeline are three powerful
+            tools provided by AWS for automating the building, testing, and deploying of applications.
+            <br>
+            <br>
+            Continuous Integration and Continuous Deployment (CI/CD) has become an essential practice in modern software
+            development. It involves automating the process of building, testing, and deploying software changes,
+            allowing teams to deliver new features and bug fixes more quickly and efficiently. Amazon Web Services (AWS)
+            provides a range of services and tools that enable organizations to implement robust and scalable CI/CD
+            pipelines.
+
+        </p>
+
+    </div>
+
+    <div class="content" id="codebuild" style="color: blueviolet;">
+        <h2 style="background-color: #ddd;">CodeBuild Section</h2>
+        <p> AWS CodeBuild is a fully managed build service that compiles source code, runs tests, and creates software
+            packages automatically. It eliminates the need to set up and maintain your own build servers, reducing
+            infrastructure costs and improving productivity. CodeBuild integrates with popular code repositories like
+            AWS CodeCommit, GitHub, and Bitbucket, allowing you to trigger builds whenever changes are made to your
+            source code.
+            <br>
+            <br>
+            CodeBuild supports multiple programming languages and build environments, providing a flexible solution for
+            building applications written in different frameworks. It also supports custom build environments, allowing
+            you to use your own build tools and scripts. With CodeBuild, you can build, test, and package your
+            applications quickly and reliably, ensuring high-quality software releases.
+        </p>
+    </div>
+
+    <div class="content" id="codedeploy" style="color: rgb(232, 9, 209);">
+        <h2>CodeDeploy Section</h2>
+        <p>AWS CodeDeploy is a fully managed deployment service that
+            automates the process of deploying. applications to
+            various instances, such as Amazon EC2 instances, on-premises instances, and Lambda functions. CodeDeploy
+            simplifies deployments by eliminating manual steps and providing a consistent and reliable deployment
+            process.
+            <br>
+            <br>
+            CodeDeploy allows you to define deployment configurations, which specify the deployment settings, such as
+            the deployment type (in-place or blue/green), the deployment groups, and the desired state of the instances.
+            These configurations can be defined using the AWS Management Console, the AWS CLI, or the APIs.
+            <br>
+            <br>
+            CodeDeploy integrates seamlessly with CodePipeline, allowing you to create a continuous delivery pipeline
+            for your applications. This enables you to automate the entire release process, from building and testing
+            your applications with CodeBuild to deploying them with CodeDeploy.
+        </p>
+    </div>
+
+    <div class=" content" id="codepipeline" style="color: rgb(238, 107, 7);">
+        <h2>CodePipeline Section</h2>
+        <p>AWS CodePipeline is a fully managed continuous delivery service that enables you to automate your software
+            release process. It allows you to define a series of stages, where each stage can represent a specific
+            action, such as building, testing, and deploying your application. CodePipeline automates the transition of
+            your application artifacts between stages, ensuring a smooth and reliable release process.
+            <br>
+            CodePipeline integrates with various AWS services, including CodeCommit, CodeBuild, CodeDeploy, and
+            CloudFormation, as well as third-party tools like Jenkins, allowing you to create a comprehensive and
+            customizable pipeline for your applications.
+            <br>
+            Within CodePipeline, you can define the flow of your pipeline by specifying the source, build, test, and
+            deploy stages. Each stage can have multiple actions, such as running unit tests or deploying to a specific
+            environment. CodePipeline provides a visual representation of your pipeline, allowing you to easily track
+            the flow and status of your deployments.
+        </p>
+    </div>
+
+    <div class="content" id="other-components" style="color: rgb(193, 233, 12);">
+        <h2>Other-components</h2>
+        <p>1. AWS CodeCommit: CodeCommit is a fully managed source control service that enables you to securely store
+            and manage your code repositories. It provides a secure and scalable solution for collaborating on projects
+            and managing version control.
+            <br>
+            <br>
+
+            2. AWS CodeArtifact: CodeArtifact is a fully managed artifact repository service that enables you to
+            securely store, publish, and manage software artifacts. It integrates with CodeBuild and CodePipeline,
+            providing a centralized location for storing your build dependencies.
+            <br>
+            <br>
+
+            3. AWS CloudFormation: CloudFormation is a service that allows you to create and manage AWS resources using
+            YAML or JSON templates. It can be used to define and provision the infrastructure required for your
+            applications, including compute resources, storage, networking, and more.
+        </p>
+    </div>
+
+    <div class="content" id="Conclusion" style="color: rgb(247, 1, 46);">
+        <h2>Conclusion</h2>
+        <p>AWS CodeBuild, CodeDeploy, and CodePipeline form a powerful suite of tools for automating the building,
+            testing, and deployment of applications in the AWS
+            <br><br>
+            cloud environment. These services eliminate the need for manual and error-prone deployment processes,
+            allowing you to achieve faster and more reliable software releases.
+            <br><br>
+            By using AWS CodeBuild, CodeDeploy, and CodePipeline, you can streamline your software release process and
+            achieve faster and more reliable deployments. This, in turn, helps to improve your development team's
+            productivity and increase the overall quality of your applications.
+        </p>
+    </div>
+
+
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+
+
+</html>
