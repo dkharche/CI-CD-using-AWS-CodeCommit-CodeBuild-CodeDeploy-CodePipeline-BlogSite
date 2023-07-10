@@ -1,5 +1,4 @@
 # CI-CD-using-AWS-CodeCommit-CodeBuild-CodeDeploy-CodePipeline-BlogSite
 
 
- 
-<img width="689" alt="image" src="https://github.com/dkharche/CI-CD-using-AWS-CodeCommit-CodeBuild-CodeDeploy-CodePipeline-BlogSite/assets/74908218/42a8076e-0454-473d-bab8-cb6ef73cea57">
+<img width="1280" alt="Screenshot 2023-07-09 at 12 49 04 PM" src="https://github.com/dkharche/CI-CD-using-AWS-CodeCommit-CodeBuild-CodeDeploy-CodePipeline-BlogSite/assets/74908218/c43c8b57-6d25-4bc3-9253-0b38d8e80fa5">
